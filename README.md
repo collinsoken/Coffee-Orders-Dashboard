@@ -47,8 +47,8 @@ The **Coffee Orders Excel Dashboard** project analyzes coffee sales data to unco
 | Coffee Type Name | `=IF([@Coffee Type]="Rob","Robusta",IF([@Coffee Type]="Lib","Liberica",...))` | Map codes to full names |
 | Roast Type Name | `=IF([@Roast Type]="M","Medium",IF([@Roast Type]="D","Dark",...))` | Map codes to full names |
 | Sales | `=[@Quantity]*[@Unit Price]` | Calculate total sales per order |
-| Customer Name to Loyalty Card | `=IF(INDEX(customers!$A$1:$I$1001,MATCH(orders!$C2,customers!$A$1:$A$1001,0),MATCH(orders!F$1,customers!$A$1:$I$1,0))=0,"",INDEX(customers!$A$1:$I$1001,MATCH(orders!$C2,customers!$A$1:$A$1001,0),MATCH(orders!F$1,customers!$A$1:$I$1,0)))` | Retrieve customer-related data from the `customers` worksheet |
-| Coffee Type to Unit Price | `=IF(INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!J$1,products!$A$1:$G$1,0))=0,"",INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!J$1,products!$A$1:$G$1,0)))` | Retrieve product-related data from the `products` worksheet |
+| Customer Name to Loyalty Card | `=IF(INDEX(customers!$A$1:$I$1001,MATCH(orders!$C2,customers!$A$1:$A$1001,0),MATCH(orders!F$1,customers!$A$1:$I$1,0))=0,"",INDEX(...)))` | Retrieve customer-related data from the `customers` worksheet |
+| Coffee Type to Unit Price | `=IF(INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!J$1,products!$A$1:$G$1,0))=0,"",INDEX(...)))` | Retrieve product-related data from the `products` worksheet |
 
 **Pivot Tables Created:**
 
